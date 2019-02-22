@@ -10,7 +10,7 @@ public class Main {
         double d = scan.nextDouble();
         scan.nextLine();
         String s = scan.nextLine();
-g
+
 
         // Write your code here.
 
