@@ -6,24 +6,20 @@ public class DataTypesMain {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int t=sc.nextInt();
+        int t = sc.nextInt();
 
-        for(int i=0;i<t;i++)
-        {
+        for (int i = 0; i < t; i++) {
 
-            try
-            {
-                long x=sc.nextLong();
-                System.out.println(x+" can be fitted in:");
-                if(x>=-128 && x<=127)System.out.println("* byte");
+            try {
+                long x = sc.nextLong();
+                System.out.println(x + " can be fitted in:");
+                if (x >= -128 && x <= 127) System.out.println("* byte");
                 //Complete the code
+            } catch (Exception e) {
+                System.out.println(sc.next() + " can't be fitted anywhere.");
             }
-            catch(Exception e)
-            {
-                System.out.println(sc.next()+" can't be fitted anywhere.");
-            }
-
         }
+    }
 }
 
 //    Java has 8 primitive data types; char, boolean, byte, short, int, long, float, and double. For this exercise, we'll work with the primitives used to hold integer values (byte, short, int, and long):
