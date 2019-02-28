@@ -1,6 +1,7 @@
 package com.hackerrank.practices.JavaLoopsTwo;
 
 import java.util.Scanner;
+import java.lang.Math.*;
 
 public class LoopTwoMain {
     public static void main(String[] args) {
@@ -11,6 +12,23 @@ public class LoopTwoMain {
             int a = in.nextInt();
             int b = in.nextInt();
             int n = in.nextInt();
+
+            int count =0;
+            int constant =0;
+            int sum =0;
+
+            while (count < n){
+                if (count==0) {
+                    constant =1;
+                    sum = a + (constant*b) + sum;
+                } else {
+                    constant = constant *2;
+                    sum = (constant * b) + sum;
+                }
+                System.out.print(sum+ " ");
+                count += 1;
+            }
+            System.out.println();
         }
         in.close();
     }
