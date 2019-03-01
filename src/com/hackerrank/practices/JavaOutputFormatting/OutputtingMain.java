@@ -1,4 +1,4 @@
-package JavaOutputFormatting;
+package com.hackerrank.practices.JavaOutputFormatting;
 
 import java.util.Scanner;
 
