@@ -1,31 +1,34 @@
 package com.hackerrank.practices.InheritanceTwo;
 
 class Arithmetic {
-     private int numOne;
-     private int numTwo;
-
-    public Arithmetic(int numOne, int numTwo) {
-        this.numOne = numOne;
-        this.numTwo = numTwo;
+    public int add(int numOne, int numTwo) {
+        int sum = numOne + numTwo;
+        return sum;
     }
+}
 
-    public int sum(int sum) {
-        return sum = numOne + numTwo;
+class Adder extends Arithmetic {
+
+    @Override
+    public int add(int numOne, int numTwo) {
+        return super.add(numOne, numTwo);
     }
 }
 
 
-public class InheritanceMain {
-    Arithmetic arithmetic = new Arithmetic(3, 4);
-//    Adder a = new Adder();
-//
-//    // Print the name of the superclass on a new line
-//        System.out.println("My superclass is: " + a.getClass().getSuperclass().getName());
-//
-//    // Print the result of 3 calls to Adder's `add(int,int)` method as 3 space-separated integers:
-//        System.out.print(a.add(10,32) + " " + a.add(10,3) + " " + a.add(10,10) + "\
-}
+public class Main {
+    public static void main(String[] args) {
+//        System.out.println("thankyou GOD, for your faithfullness");
 
+        Adder a = new Adder();
+
+// Print the name of the superclass on a new line
+        System.out.println("My superclass is: " + a.getClass().getSuperclass().getName());
+
+// Print the result of 3 calls to Adder's `add(int,int)` method as 3 space-separated integers:
+        System.out.print(a.add(10,32) + " " + a.add(10,3) + " " + a.add(10,10) + "\n");
+    }
+}
 
 //TODO::
 //        Write the following code in your editor below:
@@ -45,3 +48,4 @@ public class InheritanceMain {
 // ...
 //        My superclass is: Arithmetic
 //        42 13 20
+
