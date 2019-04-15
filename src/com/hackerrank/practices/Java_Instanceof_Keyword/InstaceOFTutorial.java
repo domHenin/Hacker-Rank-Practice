@@ -1,3 +1,5 @@
+//https://www.hackerrank.com/challenges/java-instanceof-keyword/problem?h_r=internal-search
+// Challenge Not Completed
 package com.hackerrank.practices.Java_Instanceof_Keyword;
 
 import java.util.*;
@@ -13,11 +15,11 @@ public class InstaceOFTutorial {
         int a = 0,b = 0,c = 0;
         for(int i = 0; i < mylist.size(); i++){
             Object element=mylist.get(i);
-            if(~~Complete this line~~)
+            if( instanceof Student)
             a++;
-            if(~~Complete this line~~)
+            if(element instanceof Rockstar)
             b++;
-            if(~~Complete this line~~)
+            if(element instanceof Hacker)
             c++;
         }
         String ret = Integer.toString(a)+" "+ Integer.toString(b)+" "+ Integer.toString(c);
