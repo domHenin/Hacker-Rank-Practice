@@ -15,11 +15,11 @@ public class InstaceOFTutorial {
         int a = 0,b = 0,c = 0;
         for(int i = 0; i < mylist.size(); i++){
             Object element=mylist.get(i);
-            if( instanceof Student)
+            if(element instanceof Student) //-> ~~Complete this line~~
             a++;
-            if(element instanceof Rockstar)
+            if(element instanceof Rockstar) //-> ~~Complete this line~~
             b++;
-            if(element instanceof Hacker)
+            if(element instanceof Hacker) //-> ~~Complete this line~~
             c++;
         }
         String ret = Integer.toString(a)+" "+ Integer.toString(b)+" "+ Integer.toString(c);
